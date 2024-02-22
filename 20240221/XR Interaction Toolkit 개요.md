@@ -22,3 +22,44 @@
   - Hover, Select, Active 등
 - AR Foundation 연동을 통해 AR 오브젝트 배치 및 조작
   - Translate, Rotate, Scale 등
+
+## 유니티 프로젝트 생성 & 설정
+
+### 프로젝트 생성
+
+- 3D (UPR) 템플릿으로 생성
+
+![Alt text](<Images/project 1.PNG>)
+
+- Window - Package Manger - Unity Registry 에서 Input System, XR Interaction Toolkit, XR Plugin Management, Oculus XR Plugin 설치 
+
+- Package Manager - In project 에서 설치 확인
+
+### 프로젝트 설정
+
+- Edit - Project Settings - XR Plug-in Management 에서 Oculus 체크
+
+![Alt text](<Images/project 2.PNG>)
+
+- Player 탭에서 Resolution and Presentation 탭에 Run In Background 체크
+  
+![Alt text](<Images/project 3.PNG>)
+
+- Package Manager - XR Interaction Toolkit 패키지 - Samples Import
+
+![Alt text](<Images/project 4.PNG>)
+
+- Start Assets - XRI Default Actions 파일 HMD와 왼손, 오른손 컨트롤러의 기본적인 액션이 설정되어 있음
+
+![Alt text](<Images/project 5.PNG>)
+
+- Start Assets의 프리셋 파일들을 모두 Add 하여 컴포넌트를 사용할 때 자동으로 연결되게 설정
+
+![Alt text](<Images/project 6.PNG>)
+
+- Edit - Project Settings - Preset Manager
+- Action Based Controller 등에 왼손, 오른손 구분을 위해 오른손 컨트롤러에는 Right, 왼손에는 Left를 입력 하여 각각의 이름에 맞는 게임 오브젝트에서 해당 Component를 사용할 때 자동으로 이름에 맡게 붙도록 설정해놓도록 함
+
+![Alt text](<Images/project 7.PNG>)
+
+- Hierachy 추가에 XR 창이 나오면 알맞게 설정
